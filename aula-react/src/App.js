@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import DestaqueDinamico from './DestaqueDinamico';
 import ClickCounter from './ClickCounter';
+import Api from './Api';
 
 class App extends Component {
   render() {
@@ -23,6 +24,9 @@ class App extends Component {
             <ClickCounter />
             {/* <Destaque /> */}
             {/* Edit <code>src/App.js</code> and save to reload. */}
+          </div>
+          <div>
+            <Api />
           </div>
         </header>
       </div>

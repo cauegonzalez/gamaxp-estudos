@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import DestaqueDinamico from './DestaqueDinamico';
+import ClickCounter from './ClickCounter';
 
 class App extends Component {
   render() {
@@ -19,17 +20,10 @@ class App extends Component {
                 return <DestaqueDinamico key={i} autor={artigo.autor} artigo={artigo.artigo} data={artigo.data} />
               })
             }
+            <ClickCounter />
             {/* <Destaque /> */}
             {/* Edit <code>src/App.js</code> and save to reload. */}
           </div>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );

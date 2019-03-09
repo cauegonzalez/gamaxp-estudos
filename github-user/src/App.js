@@ -12,7 +12,7 @@ class App extends Component {
         loading: false
     }
     
-    onInputChange = (event) => {
+    onInputChange(event) {
         this.setState({
             usuario: event.target.value
         })
@@ -54,8 +54,8 @@ class App extends Component {
         return (
             <div className="App">
                 <Entrada 
-                    valor={this.props.usuario} 
-                    onInputChange={this.onInputChange} 
+                    valor={this.state.usuario} 
+                    onInputChange={(event) => this.onInputChange(event)} 
                     onButtonClick={this.onButtonClick}
                 />
                 {blocoUsuario}

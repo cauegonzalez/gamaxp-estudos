@@ -61,6 +61,11 @@ body {
   color: #FFF;
 }
 
+.user {
+  display: flex;
+  justify-content: center;
+}
+
 .user-item {
   color: #282c34;
   background-color: #FF0;
@@ -68,9 +73,4 @@ body {
   justify-items: center;
   text-align: left;
   align-items: flex-start;
-}
-
-.user {
-  display: flex;
-  justify-content: center;
 }
